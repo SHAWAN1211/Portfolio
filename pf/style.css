@@ -13,6 +13,7 @@ body {
   line-height: 1.6;
 }
 
+/* Container */
 .container {
   padding: 40px 20px;
   max-width: 1000px;
@@ -25,23 +26,26 @@ header {
   text-align: center;
   padding: 60px 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-header img{
-    text-align: right;
+  border-radius: 0 0 25px 25px;
 }
 
 header h1 {
   font-size: 3em;
 }
 
+header .links {
+  margin-top: 15px;
+}
+
 header .links a {
-  margin: 10px;
+  margin: 8px;
   color: white;
   text-decoration: none;
   border: 2px solid white;
   padding: 10px 20px;
   border-radius: 25px;
   transition: 0.3s;
+  display: inline-block;
 }
 
 header .links a:hover {
@@ -54,6 +58,7 @@ section h2 {
   font-size: 2em;
   margin-bottom: 15px;
   color: #ffdc00;
+  text-align: center;
 }
 
 /* Default List Styling */
@@ -70,6 +75,10 @@ section ul li {
 }
 
 /* Skills badges */
+#skills ul {
+  text-align: center;
+}
+
 #skills ul li {
   display: inline-block;
   background: #00c9ff;
@@ -87,10 +96,12 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-top: 30px;
+  border-top: 2px solid #444;
 }
 
-/* Education and Additional Activities List Item Hover Effects */
+/* Education, Project, Extra Hover Effects */
 #education ul li,
+#project ul li,
 #extra ul li {
   background: rgba(255, 255, 255, 0.08);
   padding: 12px 15px;
@@ -100,6 +111,7 @@ footer {
 }
 
 #education ul li:hover,
+#project ul li:hover,
 #extra ul li:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #ffd700, 0 0 25px #00ffe1;
@@ -117,37 +129,113 @@ footer {
   }
 }
 
-
-
-
-/* Flexbox layout for header */
+/* Flexbox Header Layout */
 .header-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 15px #00ffe1;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px #ffd700, 0 0 35px #00ffe1;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet View */
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 2.5em;
   }
-  
-  /* Text on left */
-  .text-content {
-    flex: 1;
-    min-width: 250px;
+
+  .container {
+    padding: 30px 15px;
   }
-  
-  /* Image on right */
+
   .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0 0 15px #00ffe1;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-    margin-top: 20px;
+    width: 140px;
+    height: 140px;
   }
-  
-  .profile-pic:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 25px #ffd700, 0 0 35px #00ffe1;
+
+  #skills ul li {
+    padding: 8px 12px;
+    font-size: 0.9em;
   }
-  
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+  header {
+    padding: 40px 15px;
+  }
+
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header .links a {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  .profile-pic {
+    margin-top: 15px;
+    width: 120px;
+    height: 120px;
+  }
+
+  section h2 {
+    font-size: 1.6em;
+  }
+
+  section ul li {
+    font-size: 0.95em;
+  }
+
+  #skills ul li {
+    font-size: 0.85em;
+    padding: 8px 10px;
+  }
+}
+
+/* Small Mobile View (Extra Responsive) */
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 1.7em;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  #skills ul li {
+    padding: 6px 8px;
+    font-size: 0.8em;
+  }
+}

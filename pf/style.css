@@ -11,6 +11,7 @@ body {
   background: linear-gradient(135deg, #0f2027, #2c5364);
   color: white;
   line-height: 1.6;
+  align-items: center;
 }
 
 /* Container */
@@ -239,3 +240,4 @@ footer {
     font-size: 0.8em;
   }
 }
+

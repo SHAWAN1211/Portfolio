@@ -4,80 +4,196 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="title logo.png" />
-  <title>Shawan Jorel Singh - Portfolio</title>
+  <title>Aspiring Software Engineer | C | Python | ML Enthusiast</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Shawan Jorel Singh S</h1>
-      <p>Aspiring Software Engineer | C | Python | ML Enthusiast</p></br>
-      
-      <img src="shawan 1234.jpg" alt="Shawan Jorel Singh" class="profile-pic" />  <br/><br/>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/shawan-jorel-singh-7149a9307" target="_blank">LinkedIn</a>
-        <a href="https://github.com/SHAWAN1211" target="_blank">GitHub</a>
-        <a href="mailto:shawan1210@gmail.com">Email</a>
-        
-    </div>
+  <div class="page-bg" aria-hidden="true">
+    <span class="orb orb-one"></span>
+    <span class="orb orb-two"></span>
+    <span class="orb orb-three"></span>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Shawan Jorel Singh S</h1>
+        <h2>Aspiring Software Engineer | C | Python | ML Enthusiast</h2>
+        <p class="intro">
+          Final year Computer Science Engineering student with a Diploma in Computer Engineering.
+          Focused on clean problem solving, practical software, and machine learning projects that
+          turn data into useful outcomes.
+        </p>
+
+        <div class="links">
+          <a href="https://www.linkedin.com/in/shawan-jorel-singh-7149a9307" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/SHAWAN1211" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="mailto:shawan1210@gmail.com">Email</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>3+</strong>
+            <span>Core stacks</span>
+          </div>
+          <div>
+            <strong>1</strong>
+            <span>CNN project</span>
+          </div>
+          <div>
+            <strong>2</strong>
+            <span>Internships</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="portrait-card">
+          <img src="shawan 1234.jpg" alt="Shawan Jorel Singh" class="profile-pic" />
+          <div class="portrait-caption">
+            <span>Building with code, data, and curiosity.</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Pre Final year Computer Science Engineering student with a Diploma in Computer Engineering. Passionate about programming, web development, problem-solving, and AI/ML. Completed a project on Image Forgery Detection using CNN.</p>
-    </div>
-  </section>
+  <main>
+    <section class="section reveal" id="about">
+      <div class="container card-surface">
+        <div class="section-heading">
+          <p>About Me</p>
+          <h3>Focused on software fundamentals and applied AI</h3>
+        </div>
+        <p>
+          I am a final year Computer Science Engineering student with a Diploma in Computer Engineering.
+          My interests span programming, web development, problem-solving, and AI/ML. I enjoy building
+          practical systems and learning by shipping projects.
+        </p>
+      </div>
+    </section>
 
-  <section id="skills">
-    <div class="container">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>C</li>
-        <li>Python</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-        <li>MySQL</li>
-      </ul>
-    </div>
-  </section>
+    <section class="section reveal" id="highlights">
+      <div class="container">
+        <div class="section-heading center">
+          <p>Highlights</p>
+          <h3>A quick carousel through my profile</h3>
+        </div>
 
-  <section id="education">
-    <div class="container">
-      <h2>Education</h2>
-      <ul>
-        <li>Secondary School - Nazareth Metric HSS (2021)</li>
-        <li>Diploma in Computer Engineering - Govt Polytechnic, Purasaiwalkam (2024)</li>
-        <li>B.E. Computer Science Engineering - Rajalakshmi Institute of Technology (Pursuing)</li>
-      </ul>
-    </div>
-  </section>
+        <div class="carousel" aria-label="Portfolio highlights carousel">
+          <button class="carousel-btn prev" type="button" aria-label="Previous highlight">‹</button>
+          <div class="carousel-window">
+            <div class="carousel-track">
+              <article class="carousel-card">
+                <span class="card-kicker">Project</span>
+                <h4>Image Forgery Detection using CNN</h4>
+                <p>Built an image forgery detection system in Jupyter Notebook on Windows using Convolutional Neural Networks to identify manipulated images.</p>
+              </article>
+              <article class="carousel-card">
+                <span class="card-kicker">Strengths</span>
+                <h4>Hands-on problem solving</h4>
+                <p>Comfortable with C, Python, HTML, CSS, JavaScript, PHP, and MySQL for building and iterating on practical solutions.</p>
+              </article>
+              <article class="carousel-card">
+                <span class="card-kicker">Experience</span>
+                <h4>Industry exposure</h4>
+                <p>Completed internships in Web Development & Python Programming and Next Generation Data Networking, plus technical courses in AR, VR, and computer hardware.</p>
+              </article>
+            </div>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Next highlight">›</button>
+        </div>
 
-  <section id="project">
-    <div class="container">
-      <h2>Project</h2>
-      <h3>Image Forgery Detection using CNN</h3>
-      <p>Built a reliable image forgery detection system using Convolutional Neural Networks in Jupyter Notebook on Windows. Ensures digital security by detecting manipulated images.</p>
-    </div>
-  </section>
+        <div class="carousel-dots" aria-label="Carousel navigation">
+          <button class="dot active" type="button" aria-label="Show slide 1"></button>
+          <button class="dot" type="button" aria-label="Show slide 2"></button>
+          <button class="dot" type="button" aria-label="Show slide 3"></button>
+        </div>
+      </div>
+    </section>
 
-  <section id="extra">
-    <div class="container">
-      <h2>Additional Activities</h2>
-      <ul>
-        <li>Internship:  Web Development & Python Programming - Perma Technology, Chennai</li>
-        <li>Internship: Next Generation Data Networking - BSNL, Chennai</li>
-        <li>Course: Industrial Metaverse, AR & VR - Chennai</li>
-        <li>Course: Diploma in Computer Hardware Technology</li>
-      </ul>
-    </div>
-  </section>
+    <section class="section reveal" id="skills">
+      <div class="container card-surface">
+        <div class="section-heading">
+          <p>Technical Skills</p>
+          <h3>Tools and languages I work with</h3>
+        </div>
+        <ul class="skill-list">
+          <li>C</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section reveal" id="education">
+      <div class="container card-surface">
+        <div class="section-heading">
+          <p>Education</p>
+          <h3>Academic path</h3>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-year">2021</span>
+            <h4>Secondary School</h4>
+            <p>Nazareth Metric HSS</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2024</span>
+            <h4>Diploma in Computer Engineering</h4>
+            <p>Govt Polytechnic, Purasaiwalkam</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">Pursuing</span>
+            <h4>B.E. Computer Science Engineering</h4>
+            <p>Rajalakshmi Institute of Technology</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="projects">
+      <div class="container card-surface">
+        <div class="section-heading">
+          <p>Project</p>
+          <h3>Selected work</h3>
+        </div>
+        <div class="project-card">
+          <h4>Image Forgery Detection using CNN</h4>
+          <p>
+            A reliable image forgery detection system using Convolutional Neural Networks.
+            The project focuses on detecting manipulated images to support digital security.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="extra">
+      <div class="container card-surface">
+        <div class="section-heading">
+          <p>Additional Activities</p>
+          <h3>Experience beyond coursework</h3>
+        </div>
+        <ul class="activity-list">
+          <li>Internship: Web Development & Python Programming - Perma Technology, Chennai</li>
+          <li>Internship: Next Generation Data Networking - BSNL, Chennai</li>
+          <li>Course: Industrial Metaverse, AR & VR - Chennai</li>
+          <li>Course: Diploma in Computer Hardware Technology</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Shawan Jorel Singh S</p>
+    <div class="container footer-inner">
+      <p>© 2025 Shawan Jorel Singh S</p>
+      <a href="mailto:shawan1210@gmail.com">Let's build something useful</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
